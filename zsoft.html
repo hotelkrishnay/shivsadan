@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Invoice - Rakhi Software Surat</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: #f8f9fa;
+      color: #333;
+    }
+    .invoice-box {
+      max-width: 800px;
+      margin: auto;
+      background: #fff;
+      padding: 30px;
+      border: 1px solid #eee;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      border-radius: 8px;
+    }
+    .invoice-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #0077cc;
+      padding-bottom: 15px;
+      margin-bottom: 20px;
+    }
+    .company {
+      font-size: 20px;
+      font-weight: bold;
+      color: #0077cc;
+    }
+    .company small {
+      display: block;
+      font-size: 14px;
+      font-weight: normal;
+      color: #555;
+    }
+    .invoice-title {
+      text-align: right;
+    }
+    .invoice-title h2 {
+      margin: 0;
+      color: #333;
+    }
+    .invoice-title small {
+      color: #777;
+    }
+    .details {
+      margin-bottom: 20px;
+    }
+    .details table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .details td {
+      padding: 6px 0;
+      font-size: 15px;
+      vertical-align: top;
+    }
+    .details strong { color: #000; }
+    .table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 25px 0;
+    }
+    .table th, .table td {
+      padding: 12px 10px;
+      border: 1px solid #ddd;
+      text-align: left;
+    }
+    .table th {
+      background: #0077cc;
+      color: #fff;
+      font-weight: bold;
+    }
+    .table td { font-size: 15px; }
+    .total {
+      text-align: right;
+      margin-top: 20px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #27ae60;
+    }
+    .footer {
+      margin-top: 40px;
+      font-size: 14px;
+      text-align: center;
+      color: #777;
+      border-top: 1px solid #eee;
+      padding-top: 10px;
+    }
+
+    /* small screens */
+    @media (max-width:600px){
+      .invoice-header { flex-direction: column; align-items:flex-start; gap:12px }
+      .invoice-title { text-align:left; }
+    }
+  </style>
+</head>
+<body>
+  <div class="invoice-box">
+    <!-- Header -->
+    <div class="invoice-header">
+      <div class="company">
+        Rakhi Software Surat
+        <small>IT Solutions & Subscription Services</small>
+      </div>
+      <div class="invoice-title">
+        <h2>INVOICE</h2>
+        <small>Invoice #: RS-2025-1916</small><br>
+        <small>Date: 16 Sep 2025</small>
+      </div>
+    </div>
+
+    <!-- Client + Company Details -->
+    <div class="details">
+      <table>
+        <tr>
+          <td style="width:50%;">
+            <strong>Billed To:</strong><br>
+            Hotel Shivsadan<br>
+            Near Somnath Temple,<br>
+            Somnath, Gujarat
+          </td>
+          <td style="width:50%;">
+            <strong>From:</strong><br>
+            Rakhi Software Surat<br>
+            Office No. 12, Rajhans Complex,<br>
+            Ring Road, Adajan, Surat – 395009<br>
+            Gujarat, India<br>
+            
+            ✉️ inforakhisoftwaresurat@gmail.com
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Subscription Table -->
+    <table class="table" role="table" aria-label="Invoice items">
+      <thead>
+        <tr>
+          <th>Description</th>
+          <th>Subscription Period</th>
+          <th>Amount (INR)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Hotel Management Software Subscription (Paid)</td>
+          <td>16 Sep 2023 – 16 Sep 2025</td>
+          <td>₹ 5,000.00</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Payment Info -->
+    <div style="display:flex; justify-content:space-between; gap:20px; flex-wrap:wrap;">
+      <div style="min-width:220px;">
+        <strong>Payment Method:</strong><br>
+        UPI / Bank Transfer
+      </div>
+      <div style="min-width:220px; text-align:right;">
+        <strong>Amount Paid:</strong><br>
+        ₹ 5,000.00<br>
+        <small style="color:#777;">Paid on: 16 Sep 2025</small>
+      </div>
+    </div>
+
+    <!-- Total -->
+    <div class="total">
+      Total Paid: ₹ 5,000.00
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      Thank you for your payment! This is a computer-generated invoice and does not require a signature.<br>
+      © 2023 - 2025 Rakhi Software Surat. All Rights Reserved.
+    </div>
+  </div>
+</body>
+</html>
